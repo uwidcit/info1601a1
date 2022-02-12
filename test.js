@@ -1,1 +1,1 @@
-const test = require('testsuite1')
+const test = require('testsuite1');
