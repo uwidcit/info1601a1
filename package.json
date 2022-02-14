@@ -15,6 +15,6 @@
     "chai": "^4.2.0",
     "minimist": ">=1.2.5",
     "puppeteer": "^5.5.0",
-    "testsuite1": "^1.1.0"
+    "testsuite1": "^2.0.1"
   }
 }
