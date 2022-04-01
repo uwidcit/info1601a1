@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "minimist": ">=1.2.5",
+    "minimist": ">=1.2.6",
     "puppeteer": "^5.5.0",
     "testsuite1": "^2.0.1"
   }
