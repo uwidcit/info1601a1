@@ -4,13 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>The Pigeon Site</title>
     <style>
-
-        
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    min-height: 100%;
+}
+summary{
+    background-color: #D9DCD6;
+    padding: 1em;
+}      
+ 
+td{
+    padding: 1em;
+    border: solid;
+    border-color:rgb(221, 221, 221);
+    border-width: 1px;
+    text-align: left;
+}
+th{
+    border: solid;
+    border-color:rgb(221, 221, 221);
+    border-width: 1px;
+    text-align: left;
+    padding: 1em;
+}
+section#contact{
+    padding: 1em;
+}
+section{
+    padding: 1.5em;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    padding: 1em;
+}
+details{
+    padding: 1em;
+    margin: 1em;
+}
+form{
+    padding: 1em;
+}
+header{
+    background-color: blue;
+}
+button{
+    border-radius: 10px;
+}
+li{
+    display:inline;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
     </style>
 </head>
+
 <body>
-   <h1>My Site</h1>
+    <header>
+        <h1>The Pigeon Site</h1>
+        <nav>
+        <ul>
+        <li><button><a href="#picture">Picture</a></button></li>
+        <li><button><a href="#famous-pigeons">Famous Pigeons</a></button> </li>
+        <li> <button><a href="#trivia">Trivia</a></button></li>
+        <li><button><a href="#contact">Contact</a></button></li>
+        </ul>
+        </nav>
+    </header>
+<main>
+    <div>
+        <section id="picture">
+            <h1>Picture</h1>
+            <img src="pigeon.jpg" alt="Pigeon"> 
+        </section>
+    </div>
+        <br>
+        <div>
+        <section id="famous-pigeons">
+            <h1>Famous Pigeons</h1>
+                <table>
+                    <thead class="content">
+                        <th>Name</th><th>Bio</th>
+                    </thead>
+                <tbody class="content">
+                    <tr>
+                        <td>G. I. Joe</td><td>Flown 20 miles to cancel a bombing on friendly British Troops.</td>
+                    </tr>
+                    <tr>
+                        <td>Cher Ami</td><td>Flown for 25 minutes to deliver a crucial message to base despite being shot at.</td>
+                    </tr>
+                    <tr>
+                        <td>Mocker</td><td>Delivered a life-saving message after losing its eye from artillery fire.</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+                </table>
+        </section>
+    </div>
+        <br>
+    <div>
+        <section id="trivia">
+            <h1>Trivia</h1>
+            <details>
+                <summary>They Understand Space and Time</summary>
+                <p>A 2017 study found pigeons could evaluate the time it takes a digital line to be drawn according to its length.</p>
+            </details>
+
+            <details>
+                <summary>They are Excellent at Homing</summary>
+                    <p>Pigeons can find their way home from 1300 miles away even if they've been transported in complete isolation.</p>
+            </details>
+
+            <details>
+                <summary>They can diagnose cancer</summary>
+                    <p>A 2015 study revealed that pigeons can be trained to diagnose cancer from images with astonishing accuracy of 99%.</p>
+            </details>
+        </section>
+        <br>
+    </div>
+
+    <div>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>  
+</main>
+   <footer></footer>
 </body>
 </html>
