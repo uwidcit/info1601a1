@@ -3,11 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFO 1601 - Assignment 1</title>
+    <title>Gershone's Portfolio</title>
     <style>
+    /* Global reset*/
+* {
+  box-sizing: border-box; /* Test case 22 */
+  margin: 0;
+  padding: 0;
+}
+/*Navbar*/
+.navbar {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px; /* Test case 7 */
+}
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px; /* Test case 8 */
+}
+/* Hero Section */
+.hero {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* light background */
+  text-align: center; /* Test case 12 */
+}
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Test case 9 */
+}
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px; /* Test case 1 */
+  margin: 20px 0;
+}
+.card-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 800; /* extra-bold */
+  color: #000000; /* Test case 2 */
+}
+.card-body {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6; /* Test case 3 */
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Test case 6 */
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Test case 4 */
+}
+.btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Test case 5 */
+}
+/* Flex Layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Test case 10 */
+}
+.flex-item {
+  flex: 1;
+  min-width: 300px; /* Test case 11 */
+  background: #eaeaea;
+  padding: 20px;
+}
+/* Footer */
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0; /* Test case 13 */
+}
+/* Form */
+form {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f5f5f5; /* Test case 29 */
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333333; /* Test case 15 */
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px; /* Test case 14 */
+  margin-bottom: 12px;
+}
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold; /* Test case 16 */
+}
+.badge-success {
+  background-color: green;
+  color: #ffffff; /* Test case 17 */
+}
+.badge-danger {
+  background-color: red;
+  color: #ffffff; /* Test case 18 */
+}
+/* Figure */
+figure {
+  width: 30vw;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  text-align: center; /* Test case 19 */
+}
+figure img {
+  max-width: 100%;
+  display: block; /* Test case 20 */
+}
+figcaption {
+  color: #555555;
+  font-size: 14px;
+  text-align: center; /* Test case 21 */
+}
+/* Accordion */
+details {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px; /* Test case 23 */
+}
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px; /* Test case 24 */
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden; /* Test case 25 */
+  width: 100%;
+}
+th {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left; /* Test case 26 */
+}
+td {
+  padding: 12px;
+  text-align: left; /* Test case 27 */
+}
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5; /* Test case 28 */
+}
+/* Dialog */
+dialog[popover] {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Test case 32 */
+}
     </style>
 </head>
 <body>
-   <h1>INFO 1601 - Assignment 1</h1>
+   <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Projects</a>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Gershone's page</h1>
+    <p>This is buuilt for my Assignment</p>
+  </section>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Card Example -->
+    <div class="card">
+      <div class="card-header">Projects</div>
+      <div class="card-body">
+        This project shows my Web Development skills
+      </div>
+      <button class="btn-primary">View Project</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+ <!-- Flex Layout -->
+    <div class="flex-container">
+      <div class="flex-item">Project A</div>
+      <div class="flex-item">Project B</div>
+      <div class="flex-item">Project C</div>
+    </div>
+    <!-- Form -->
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <button class="btn-primary">Follow</button>
+    </form>
+    <!-- Badges -->
+    <span class="badge badge-success">New</span>
+    <span class="badge badge-danger">Reworl</span>
+    <!-- Figure -->
+    <figure>
+      <img src="project.jpg" alt="Screenshot of project">
+      <figcaption>latest project</figcaption>
+    </figure>
+ <!-- Accordion -->
+    <details>
+      <summary>About This Site</summary>
+      <p>This site was built for my Assignment.</p>
+    </details>
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>INFO1601</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>COMP1601</td>
+          <td>In Progress</td>
+        </tr>
+      </tbody>
+    </table>
+<!-- Dialog -->
+    <button popovertarget="myDialog">Open Info</button>
+    <dialog id="myDialog" popover>
+      <p>This dialog is an expermientation</p>
+    </dialog>
+  </div> <!-- End Container -->
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Gershone's Portfolio</p>
+  </footer>
 </body>
 </html>
